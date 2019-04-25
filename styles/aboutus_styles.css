@@ -120,7 +120,7 @@ p::selection
 h1{font-size: 72px;}
 h2{font-size: 36px;}
 h3{font-size: 28px;}
-h4{font-size: 24px;}
+h4{font-size: 20px;}
 h5{font-size: 16px;}
 h6{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
@@ -700,14 +700,16 @@ img.responsive {
 }
 .newsletter_text h4
 {
-	margin-bottom: 0px;
+	margin-bottom: 9px;
 	line-height: 24px;
 }
-.newsletter_text p
+.newsletter_text h6
 {
+
 	margin-bottom: 0px;
-	line-height: 1.7;
+	line-height: 1.5;
 	color: #51545f;
+	letter-spacing: 0.05em;
 }
 .newsletter_form
 {

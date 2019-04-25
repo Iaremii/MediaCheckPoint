@@ -421,7 +421,12 @@
 
 @media only screen and (max-width: 539px)
 {
-	
+	.section_title h5
+{
+	font-size: 15px;
+	padding: 20px;
+	display: inline-block;
+}
 }
 
 /************

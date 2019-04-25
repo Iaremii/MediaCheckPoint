@@ -1168,14 +1168,16 @@ textarea:hover
 }
 .newsletter_text h4
 {
-	margin-bottom: 0px;
+	margin-bottom: 9px;
 	line-height: 24px;
 }
-.newsletter_text p
+.newsletter_text h6
 {
+
 	margin-bottom: 0px;
-	line-height: 1.7;
+	line-height: 1.5;
 	color: #51545f;
+	letter-spacing: 0.05em;
 }
 .newsletter_form
 {

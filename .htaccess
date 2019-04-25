@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{THE_REQUEST} //
+   # Проверяем, повторяется ли слеш (//) более двух раз.
+RewriteRule .* /$0 [R=301,L]
+   # Исключаем все лишние слеши.
+
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www.mediacheckpoint.ru$ [NC]
+RewriteRule ^(.*)$ https://mediacheckpoint.ru/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/ 
+RewriteRule ^(.*)index\.(php|html|htm)$ https://mediacheckpoint.ru/$1 [R=301,L]
+</IfModule>

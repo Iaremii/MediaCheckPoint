@@ -21,7 +21,6 @@ COLOR PALETTE
 4. Our projects
 	5.1 Our projects Sorting
 	5.2 Our projects Products Grid
-6. Deal of the week
 7. Best Sellers
 	7.1 Slider Nav
 8. Benefit
@@ -290,7 +289,7 @@ section
 {
 	display: inline-block;
 }
-.navbar_menu li a
+.navbar_menu li a 
 {
 	display: block;
 	color: #1e1e27;
@@ -304,6 +303,8 @@ section
 	-o-transition: color 0.3s ease;
 	transition: color 0.3s ease;
 }
+
+
 .navbar_menu li a:hover
 {
 	color: #b5aec4;
@@ -584,7 +585,7 @@ section
 {	font-weight: 200;
 	margin-bottom: 29px;
 	letter-spacing: 0.1em;
-	
+	line-height: 23px;
 	margin-right: 180px;
 	
 }
@@ -788,18 +789,42 @@ section
 	color: #b5aec4;
 	text-decoration: line-through;
 }
+.product_bubble_kanc
+{
+	position: absolute;
+	margin-left: 188px;
+	margin-top: 13px;
+	top: 11px;
+	width: 80px;
+	height: 20px;
+	border-radius: 44px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+	transition: 200ms;
+	
+}
+.product_bubble_kanc span
+{
+	font-size: 10px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
 .product_bubble
 {
 	position: absolute;
-	top: 15px;
+	top: 11px;
 	width: 80px;
 	height: 22px;
-	border-radius: 3px;
+	border-radius: 44px;
 	text-transform: uppercase;
 }
 .product_bubble span
 {
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 600;
 	color: #FFFFFF;
 }
@@ -812,7 +837,7 @@ section
 	height: 0;
 	left: auto;
 	right: 6px;
-	bottom: -6px;
+	bottom: -7px;
 	border: 6px solid;
 }
 
@@ -896,39 +921,44 @@ section
 6. Deal of the week
 *********************************/
 
+
 .deal_ofthe_week
 {
 	width: 100%;
 	margin-top: 41px;
 	background: #f2f2f2;
 }
+
 .deal_ofthe_week_img
 {
-	height: 540px;
+background-image: url(images/world2.jpg);
+	height: 410px;
 }
 .deal_ofthe_week_img img
-{
+{	
 	height: 100%;
 }
 .deal_ofthe_week_content
 {
+     margin-left: 20px;
 	height: 100%;
 }
 .section_title
 {
 	background-color: white;
-	border-radius: 15px 50px;
+	border-radius: 6px ;
 	
 	display: inline-block;
 	text-align: center;
-	opacity: .8; 
+	opacity: 0.9; 
 }
 .text-center{
 	padding-top: 20px;
 }
-.section_title h4
+.section_title h5
 {
-	padding: 9px;
+	font-size: 20px;
+	padding: 30px;
 	display: inline-block;
 }
 .section_title::after
@@ -1115,14 +1145,16 @@ section
 }
 .newsletter_text h4
 {
-	margin-bottom: 0px;
+	margin-bottom: 9px;
 	line-height: 24px;
 }
-.newsletter_text p
+.newsletter_text h6
 {
+
 	margin-bottom: 0px;
-	line-height: 1.7;
+	line-height: 1.5;
 	color: #51545f;
+	letter-spacing: 0.05em;
 }
 .newsletter_form
 {

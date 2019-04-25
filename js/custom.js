@@ -28,6 +28,7 @@ jQuery(document).ready(function($)
 
 	var header = $('.header');
 	var navbar = $('.navbar');
+	var product_bubble_kanc = $('.product_bubble_kanc');
 	var logo = $('.logo_container');
 	var topNav = $('.top_nav');
 	var mainSlider = $('.main_slider');
@@ -82,6 +83,7 @@ jQuery(document).ready(function($)
 				header.css({'top':"-20px"	});
 				navbar.css({"padding-top":"30px"});
 				logo.css({"padding-top":"20px"});
+				product_bubble_kanc.css({"top":"25px"});
 
 			}
 			else
@@ -89,6 +91,7 @@ jQuery(document).ready(function($)
 				header.css({'top':"0px"});
 				navbar.css({"padding-top":"0px"});
 				logo.css({"padding-top":"0px"});
+				product_bubble_kanc.css({"top":"10px"});
 			}
 		}
 		if(window.innerWidth > 991 && menuActive)
